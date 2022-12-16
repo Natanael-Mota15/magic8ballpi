@@ -2,25 +2,66 @@
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1000px;
   }
 
-
+img {
+  top: 10;
+  
+  right: 1000;
+}
 
 
 body {
   font-family: 'Cabin', sans-serif;
-  background-color: #161616;
-  height: 95%;
+  
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 95%;
+  background-image: url("https://media.istockphoto.com/id/532006819/vector/theater-curtain-decorated-with-fringe-and-tassels.jpg?s=612x612&w=0&k=20&c=-lj_VHvm5_0OSJv6jJzkvBBHjPGlTeC3SziwZZZkbXM=");
+  background-repeat:no-repeat;
+  background-size:cover;
+  Position: 0,0;
+  
+
 }
 
+
+span{
+
+  font-size: 10px;
+  color:rgb(0, 0, 0)
+  
+}
+img:hover {
+  /* background-color: rgb(242, 222, 64); */
+  background-image: url("https://media.istockphoto.com/id/455594363/vector/summer-sunburst.jpg?s=612x612&w=0&k=20&c=mCyu5LWGzd5A6kNuld98qpP5Qk4Be2Oj14E8bmjS8gY=");
+  height: 612px;
+  width: 610px;
+
+}
+
+span:hover {
+  background-color: rgb(245, 219, 20);
+  padding: 15px 15px;
+}
+
+
+.zoom {
+  padding: 50px;
+
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px;
+  margin: 0 auto; */
+}
+
+.zoom:hover {
+  scale: (2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

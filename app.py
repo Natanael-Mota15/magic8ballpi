@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
-import picamera
+# import picamera
 import datetime
 import time
 import glob
-from sense_hat import SenseHat
+# from sense_hat import SenseHat
 import random
-sense=SenseHat()
+# sense=SenseHat()
 app = Flask(__name__)
 
 @app.route('/')
@@ -39,7 +39,7 @@ def Question():
             18:("My sources say no.")
             }
         display = f'{name},{reponse[num]}'
-        sense.show_message((display),text_colour=(0,0,255),scroll_speed=0.05)
+        # sense.show_message((display),text_colour=(0,0,255),scroll_speed=0.05)
     return render_template('Qs.html')
 
 @app.route('/future')
@@ -65,7 +65,7 @@ def future():
         17:"You shall die a painful death",
         18:"IDK you future but you look nice(wink wink)",    
         }
-    sense.show_message((reponse2[num]),text_colour=(0,0,255),scroll_speed=0.05)
+    # sense.show_message((reponse2[num]),text_colour=(0,0,255),scroll_speed=0.05)
     return render_template('future.html')   
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
